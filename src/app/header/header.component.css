@@ -1,0 +1,5 @@
+/* styles.css */
+mat-toolbar {
+  background-color: #ff0404; /* Light gray background */
+  color: #fdfdfd; /* Dark text */
+}
