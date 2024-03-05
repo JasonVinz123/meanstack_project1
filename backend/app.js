@@ -31,17 +31,17 @@ app.use('/api/posts' , (req, res, next)=>{
     const posts = [
     {
             id:'1',
-            title: 'suntokan ',
-            content: 'na sana'
+            title: 'from server-side post',
+            content: 'coming from the server side'
     },
             {
                 id:'2',
-                title: 'katakot',
-                content: 'kakarot AHAHAHAHA'
+                title: 'second from server-side post',
+                content: 'second coming from server side'
             }
     ];
                 res.status(200).json({
-                    message: 'IRINOMAN NA',
+                    message: 'Posts fetched succesfully',
                     posts: posts
                 });
 

@@ -1,8 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { Subscription } from "rxjs";
 import {Post} from '../post.model'
-import { PostsService } from "../post.service";
-
+import { PostsService } from "../PostsService";
 
 @Component({
     selector: 'app-post-list',
@@ -21,4 +20,4 @@ export class PostListComponent{
            this.posts = posts;
        });
    }
-} 
+}

@@ -21,7 +21,7 @@ export class PostsService {
     }
 
     fetchPosts(){
-        this.http.get<{message: string, posts: Post[]}>('http://localhost:5000/api/posts').subscribe(data => {
+        this.http.get<{message: string, posts: Post[]}>('http://localhost:3500/api/posts').subscribe(data => {
             this.posts = data.posts;
             this.postsUpdated.next([...this.posts]);
         });
